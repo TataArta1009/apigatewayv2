@@ -2,8 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches:
-      - main  # Jalankan pipeline saat ada push ke branch main
+    branches: [ main ]
+  workflow_dispatch:
+    
 
 jobs:
   install:
